@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ffeaee">
+  <meta name="description"
+    content="Whistledown, a personal library of extraordinary authors and stories.">
+  <title>Whistledown | Personal Library</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,500&family=Quicksand:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+  <link rel="stylesheet" href="Whistledown.css">
+  <script defer src="Whistledown-data.js"></script>
+  <script defer src="Whistledown.js"></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- NAVIGATION -->
+  <header class="header">
+    <div class="shell header-inner">
+      <a href="#home" class="brand" aria-label="Whistledown home">
+        <img src="photos/logoW.png" alt="">
+        <span>
+          <span class="brand-name">Whistledown</span>
+          <span class="brand-sub">PERSONAL LIBRARY</span>
+        </span>
+      </a>
+
+      <nav class="nav" id="navigation" aria-label="Main navigation">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#authors">Authors</a>
+        <a href="#books" class="nav-cta">Browse Books ↗</a>
+      </nav>
+
+      <button
+        id="mobileToggle"
+        class="icon-btn mobile-toggle"
+        type="button"
+        aria-label="Open navigation"
+        aria-controls="navigation"
+        aria-expanded="false"
+      >☰</button>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- SECTION 1: HOME -->
+    <section class="hero" id="home" aria-labelledby="homeTitle">
+      <div class="shell hero-inner">
+
+        <div class="hero-copy">
+          <span class="eyebrow">✦ A LITTLE WORLD OF BOOKS</span>
+
+          <h1 id="homeTitle">Dearest <em>Reader,</em></h1>
+
+          <p class="hero-tagline">
+            Extraordinary authors.<br>
+            Extraordinary stories.
+          </p>
+
+          <p class="hero-description">
+            Welcome to Whistledown, a personal haven for literary
+            discoveries and beloved stories. Explore the voices
+            behind the pages and the books that invite us to stay
+            a little longer.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#about" class="button button-primary">
+              Discover our story →
+            </a>
+            <a href="#books" class="button button-outline">
+              Explore the collection
+            </a>
+          </div>
+
+          <div class="hero-stats">
+            <div>
+              <strong id="statBooks">24</strong>
+              <small>Curated books</small>
+            </div>
+            <div>
+              <strong id="statAuthors">8</strong>
+              <small>Featured authors</small>
+            </div>
+            <div>
+              <strong id="statReviews">4</strong>
+              <small>Reader reviews</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-art" aria-label="Featured book covers">
+          <div class="feature-frame">
+            <img
+              id="featureImage"
+              src="photos/Book1Azu.png"
+              alt="Featured book cover"
+            >
+          </div>
+
+          <div class="feature-stamp">
+            <strong>The Editor's Shelf</strong>
+            <small>Stories worth revisiting</small>
+          </div>
+
+          <div class="feature-controls">
+            <button type="button" id="prevFeature"
+              aria-label="Previous featured book">←</button>
+            <span id="featureCount" aria-live="polite">1 / 5</span>
+            <button type="button" id="nextFeature"
+              aria-label="Next featured book">→</button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 2: ABOUT -->
+    <section class="section about" id="about"
+      aria-labelledby="aboutTitle">
+      <div class="shell">
+
+        <div class="about-layout">
+          <div class="about-aside">
+            <p>May this message<br>find you well.</p>
+          </div>
+
+          <div>
+            <span class="eyebrow">A NOTE FROM WHISTLEDOWN</span>
+            <h2 class="section-title" id="aboutTitle">
+              Word has <em>arrived.</em>
+            </h2>
+            <p class="about-copy" id="aboutText"></p>
+            <a href="#authors" class="button button-quiet">
+              Meet the storytellers →
+            </a>
+          </div>
+        </div>
+
+        <div class="review-wrap">
+          <span class="eyebrow">WORDS FROM OUR READERS</span>
+          <h3 class="review-title">Between the lines</h3>
+          <div class="reviews-grid" id="reviewsGrid"></div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 3: AUTHORS -->
+    <section class="section authors" id="authors"
+      aria-labelledby="authorsTitle">
+      <div class="shell">
+
+        <div class="section-head center">
+          <span class="eyebrow">MEET THE STORYTELLERS</span>
+          <h2 class="section-title" id="authorsTitle">
+            Pens behind the <em>pages.</em>
+          </h2>
+          <p class="section-intro">
+            The writers whose stories have found a home
+            in our collection.
+          </p>
+        </div>
+
+        <div class="authors-grid" id="authorsGrid"></div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: BOOKS -->
+    <section class="section books" id="books"
+      aria-labelledby="booksTitle">
+      <div class="shell">
+
+        <div class="section-head">
+          <span class="eyebrow">EXPLORE THE COLLECTION</span>
+          <h2 class="section-title" id="booksTitle">
+            Whistledown's <em>library.</em>
+          </h2>
+          <p class="section-intro">
+            Discover your next read. Search and explore the books
+            at your own pace.
+          </p>
+        </div>
+
+        <div class="catalog-toolbar">
+          <div class="search-wrap">
+            <span class="search-icon" aria-hidden="true">⌕</span>
+            <label class="sr-only" for="search">Search books</label>
+            <input
+              type="search"
+              id="search"
+              placeholder="Search by title, author, ISBN, or genre..."
+              autocomplete="off"
+            >
+            <button type="button" id="clearSearch"
+              class="clear-search" aria-label="Clear search" hidden>×</button>
+          </div>
+
+          <div class="filters">
+
+            <label>
+              <span class="sr-only">Filter author</span>
+              <select id="authorFilter">
+                <option value="all">All authors</option>
+              </select>
+            </label>
+
+            <label>
+              <span class="sr-only">Filter status</span>
+              <select id="statusFilter">
+                <option value="all">All statuses</option>
+                <option value="Not tracked">Not tracked</option>
+                <option value="Reading">Reading</option>
+                <option value="Completed">Completed</option>
+                <option value="Wishlist">Wishlist</option>
+                <option value="Lent Out">Lent out</option>
+              </select>
+            </label>
+
+            <label id="formatHolder" hidden>
+              <span class="sr-only">Filter format</span>
+              <select id="formatFilter">
+                <option value="all">All formats</option>
+              </select>
+            </label>
+
+            <label id="genreHolder" hidden>
+              <span class="sr-only">Filter genre</span>
+              <select id="genreFilter">
+                <option value="all">All genres</option>
+              </select>
+            </label>
+
+            <label>
+              <span class="sr-only">Sort books</span>
+              <select id="sort">
+                <option value="original">Curated order</option>
+                <option value="title">Title: A–Z</option>
+                <option value="author">Author: A–Z</option>
+                <option value="recent" id="recentSort" hidden>
+                  Recently added
+                </option>
+                <option value="rating" id="ratingSort" hidden>
+                  Highest rated
+                </option>
+              </select>
+            </label>
+
+            <div class="view-switch" role="group"
+              aria-label="Catalog display">
+              <button type="button" id="gridToggle"
+                aria-label="Grid view" aria-pressed="true">▦</button>
+              <button type="button" id="listToggle"
+                aria-label="List view" aria-pressed="false">☷</button>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="catalog-line">
+          <span id="resultCount" role="status" aria-live="polite">
+            Showing all books
+          </span>
+          <div>
+            <button id="resetFilters" class="plain-link"
+              type="button" hidden>Reset filters</button>
+            <button id="restoreBooks" class="plain-link"
+              type="button" hidden>Restore removed books</button>
+          </div>
+        </div>
+
+        <div id="booksGrid" class="books-grid"
+          aria-label="Book collection grid"></div>
+
+        <div id="booksList" class="list-wrap" hidden>
+          <table class="book-table">
+            <thead>
+              <tr>
+                <th>Book</th>
+                <th>Author</th>
+                <th>Genre</th>
+                <th>Shelf</th>
+                <th>Date added</th>
+                <th>Status</th>
+                <th>Details</th>
+              </tr>
+            </thead>
+            <tbody id="booksTableBody"></tbody>
+          </table>
+        </div>
+
+        <div id="emptyState" class="empty" hidden>
+          <div class="empty-symbol" aria-hidden="true">▤</div>
+          <h3>No books found</h3>
+          <p>Try another search or clear your filters.</p>
+          <button type="button" id="emptyReset"
+            class="button button-primary">Reset filters</button>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="shell footer-inner">
+      <div>
+        <strong>Whistledown</strong>
+        <small>A literary haven, one page at a time.</small>
+      </div>
+      <div>
+        <button type="button" class="music-btn"
+          id="musicToggle" aria-pressed="false">
+          ♫ Play ambience
+        </button>
+        <small>Made with love for stories.</small>
+      </div>
+    </div>
+  </footer>
+
+  <audio id="music" loop preload="none">
+    <source src="ILMB.mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- BOOK DETAILS DRAWER -->
+  <dialog id="bookDialog" class="book-dialog"
+    aria-labelledby="detailTitle">
+
+    <div class="dialog-top">
+      <span class="eyebrow">FROM THE COLLECTION</span>
+      <button type="button" class="icon-btn"
+        id="closeDialog" aria-label="Close book details">×</button>
+    </div>
+
+    <div id="detailsView" class="dialog-content">
+      <div class="detail-header">
+        <img id="detailCover" class="detail-cover"
+          src="" alt="">
+
+        <div>
+          <span class="eyebrow">BOOK DETAILS</span>
+          <h2 class="detail-heading" id="detailTitle"></h2>
+          <p id="detailAuthor" class="detail-byline"></p>
+          <span id="detailStatus" class="status"></span>
+        </div>
+      </div>
+
+      <p id="detailSynopsis" class="synopsis"></p>
+
+      <h3 class="meta-title">Catalog information</h3>
+      <dl class="metadata" id="detailMeta"></dl>
+
+      <h3 class="meta-title">Personal notes</h3>
+      <p id="detailNotes" class="note-box"></p>
+
+      <div class="dialog-actions">
+        <button type="button" id="editBook"
+          class="button button-primary">
+          Edit details / status
+        </button>
+        <button type="button" id="removeBook"
+          class="button button-danger">
+          Remove from my view
+        </button>
+      </div>
+    </div>
+
+    <!-- EDIT FORM -->
+    <form id="editForm" class="edit-form" hidden>
+      <h2>Edit book details</h2>
+      <p class="edit-hint">
+        Fill in information you know. Changes stay in this browser.
+      </p>
+
+      <div class="form-grid">
+        <label class="wide">
+          Title
+          <input name="title" required maxlength="220">
+        </label>
+
+        <label>
+          Author
+          <input name="author" required maxlength="120">
+        </label>
+
+        <label>
+          Genre
+          <input name="genre" maxlength="80">
+        </label>
+
+        <label>
+          Status
+          <select name="status">
+            <option>Not tracked</option>
+            <option>Reading</option>
+            <option>Completed</option>
+            <option>Wishlist</option>
+            <option>Lent Out</option>
+          </select>
+        </label>
+
+        <label>
+          Format
+          <select name="format">
+            <option value="">Not recorded</option>
+            <option>Paperback</option>
+            <option>Hardcover</option>
+            <option>E-book</option>
+            <option>Audiobook</option>
+          </select>
+        </label>
+
+        <label>
+          Shelf / tag
+          <input name="shelf" maxlength="80">
+        </label>
+
+        <label>
+          Date added
+          <input name="dateAdded" type="date">
+        </label>
+
+        <label>
+          Rating (0–5)
+          <input name="rating" type="number"
+            min="0" max="5" step="0.5">
+        </label>
+
+        <label>
+          Publisher
+          <input name="publisher" maxlength="120">
+        </label>
+
+        <label>
+          Publication year
+          <input name="year" type="number" min="1000" max="2200">
+        </label>
+
+        <label>
+          ISBN
+          <input name="isbn" maxlength="24">
+        </label>
+
+        <label>
+          Page count
+          <input name="pages" type="number" min="1">
+        </label>
+
+        <label>
+          Lent to
+          <input name="lentTo" maxlength="100">
+        </label>
+
+        <label class="wide">
+          Synopsis
+          <textarea name="synopsis" rows="5"></textarea>
+        </label>
+
+        <label class="wide">
+          Personal notes
+          <textarea name="notes" rows="4"></textarea>
+        </label>
+      </div>
+
+      <div class="dialog-actions">
+        <button type="submit" class="button button-primary">
+          Save changes
+        </button>
+        <button type="button" id="cancelEdit"
+          class="button button-outline">Cancel</button>
+      </div>
+    </form>
+
+  </dialog>
+
+  <div class="toast" id="toast"
+    role="status" aria-live="polite" hidden></div>
+
+</body>
+</html>
