@@ -1,216 +1,195 @@
 # Whistledown Personal Library
 
-Whistledown is a personal library website created as a **Human-Computer Interaction project**.
+**A Modern, Interactive, and User-Friendly Digital Bookshelf**
 
-The website presents a personal collection of books together with information about their authors, reviews, ratings, and reading details. It was designed with a focus on simplicity, readability, consistency, and ease of navigation.
+Whistledown Personal Library is a frontend web application designed to showcase a curated collection of books, authors, and reader reviews through an elegant and accessible digital library experience.
 
-## Project Overview
+Inspired by classic literary aesthetics, the project combines a soft rose, peach, and burgundy color palette with modern UI/UX design principles to create a clean, responsive, and intuitive reading catalog.
 
-This project demonstrates the application of Human-Computer Interaction principles through a simple personal library interface.
-
-Users can browse the books included in the collection, read personal reviews, and view information about the authors. The goal is to present book-related content in a clear, organized, and visually appealing format.
+The application is built entirely with **HTML, CSS, and Vanilla JavaScript**, without requiring a backend or database.
 
 ## Features
 
-- Displays a personal collection of books
-- Shows book titles and cover images
-- Includes author information
-- Presents personal book reviews
-- Uses a clean and organized layout
-- Provides simple navigation
-- Applies consistent fonts, spacing, colors, and design elements
-- Supports a readable and user-friendly browsing experience
+### Interactive Book Catalog
+- Browse a curated collection of 24 books.
+- Switch between grid and list views.
+- Search books by title, author, ISBN, or genre.
+- Filter books by author and available catalog metadata.
+- Sort books alphabetically or by available ratings and dates.
+- View detailed book information, including genre, format, publisher, publication year, ISBN, and page count.
 
-## Human-Computer Interaction Principles
+### Book Management
+- View and edit book information.
+- Update reading statuses, such as Reading, Completed, Wishlist, and Lent Out.
+- Add personal ratings and reading notes.
+- Organize books using shelf labels or tags.
+- Remove books from the current view and restore them when needed.
+- Preserve user changes locally through browser `localStorage`.
 
-The website applies several HCI principles:
+### Author Profiles
+- Explore 8 featured authors.
+- Read short author biographies.
+- Browse books associated with each author.
 
-### Consistency
+### Reader Reviews
+- Discover reader perspectives and recommendations.
+- Explore literary experiences through a dedicated review section.
 
-The same layout, typography, colors, and design patterns are used throughout the website.
-
-### Simplicity
-
-The interface focuses on essential book information without unnecessary or distracting elements.
-
-### Readability
-
-Text size, spacing, alignment, and contrast are designed to make the content easy to read.
-
-### Visibility
-
-Book information, reviews, and navigation elements are clearly presented.
-
-### User-Friendly Navigation
-
-The page structure allows users to browse the content easily and understand where information is located.
-
-### Visual Hierarchy
-
-Headings, images, sections, and descriptions are arranged according to their importance.
+### UI/UX Features
+- Responsive layouts for desktop, tablet, and mobile devices.
+- Minimalist navigation with a collapsible mobile menu.
+- Consistent book-cover dimensions and structured card layouts.
+- Smooth hover effects and subtle transitions.
+- Interactive book-details modal.
+- Accessible form labels, keyboard focus indicators, and reduced-motion support.
+- Optional background music and featured-book slideshow.
 
 ## Technologies Used
 
-- HTML
-- CSS
-- Visual Studio Code
-- Git
-- GitHub
+| Technology | Purpose |
+|---|---|
+| HTML5 | Semantic page structure |
+| CSS3 | Styling, animations, Grid, and Flexbox |
+| JavaScript (ES6+) | Dynamic rendering and interactions |
+| LocalStorage API | Browser-local data persistence |
+| Google Fonts | Literary typography and readability |
+| Git & GitHub | Version control and source-code hosting |
+| Vercel | Planned static website deployment |
+
+**Typography:** Cinzel, EB Garamond, and Quicksand.
+
+## UI/UX Design Principles
+
+The redesign focuses on creating a user-friendly experience while preserving Whistledown's original visual identity.
+
+- **KISS (Keep It Simple, Stupid):** Maintain straightforward navigation and understandable workflows.
+- **DRY (Don't Repeat Yourself):** Reuse JavaScript rendering functions and CSS design tokens.
+- **YAGNI (You Aren't Gonna Need It):** Avoid unnecessary frameworks, backend infrastructure, and features beyond the project's scope.
+- **Visual Hierarchy:** Establish clear distinctions between headings, descriptions, metadata, and interactive elements.
+- **Consistency:** Use standardized colors, typography, buttons, cards, and spacing.
+- **Progressive Disclosure:** Display essential book information first, with additional details available on demand.
+- **Responsive Design:** Adapt the interface to different screen sizes and devices.
+- **Accessibility:** Support readable typography, meaningful labels, keyboard navigation, and reduced-motion preferences.
 
 ## Project Structure
 
 ```text
-Whistledown/
-├── Whistledown.html
+Whistledown-Personal-Library/
+│
+├── photos/
+│   ├── logoW.png
+│   ├── GTY.jpg
+│   ├── heartless.jpg
+│   ├── Jonaxx.png
+│   └── ... other images
+│
+├── index.html
 ├── Whistledown.css
+├── Whistledown-data.js
+├── Whistledown.js
+├── ILMB.mp3
 └── README.md
+```
 
-Use this revised version based on your actual project structure:
+### File Descriptions
 
-````markdown
-# Whistledown Personal Library
+- **index.html** — Main website structure and layout.
+- **Whistledown.css** — Design system, responsive styling, and visual interactions.
+- **Whistledown-data.js** — Book records, author profiles, reader reviews, and featured images.
+- **Whistledown.js** — Catalog rendering, search, sorting, book management, and interactive functionality.
+- **photos/** — Book covers, author portraits, and branding images.
+- **ILMB.mp3** — Optional website background audio.
 
-Whistledown is a personal library website created as a **Human-Computer Interaction project**.
+## Getting Started
 
-The website presents a personal collection of books together with information about their authors, reviews, ratings, and reading details. It was designed with a focus on simplicity, readability, consistency, and ease of navigation.
+### Prerequisites
 
-## Project Overview
+You only need a modern web browser and a code editor, such as Visual Studio Code.
 
-This project demonstrates the application of Human-Computer Interaction principles through a simple personal library interface.
-
-Users can browse the books included in the collection, read personal reviews, and view information about the authors. The goal is to present book-related content in a clear, organized, and visually appealing format.
-
-## Features
-
-- Displays a personal collection of books
-- Shows book titles and cover images
-- Includes author information
-- Presents personal book reviews
-- Uses a clean and organized layout
-- Provides simple navigation
-- Applies consistent fonts, spacing, colors, and design elements
-- Supports a readable and user-friendly browsing experience
-
-## Human-Computer Interaction Principles
-
-The website applies several HCI principles:
-
-### Consistency
-
-The same layout, typography, colors, and design patterns are used throughout the website.
-
-### Simplicity
-
-The interface focuses on essential book information without unnecessary or distracting elements.
-
-### Readability
-
-Text size, spacing, alignment, and contrast are designed to make the content easy to read.
-
-### Visibility
-
-Book information, reviews, and navigation elements are clearly presented.
-
-### User-Friendly Navigation
-
-The page structure allows users to browse the content easily and understand where information is located.
-
-### Visual Hierarchy
-
-Headings, images, sections, and descriptions are arranged according to their importance.
-
-## Technologies Used
-
-- HTML
-- CSS
-- Visual Studio Code
-- Git
-- GitHub
-
-## Project Structure
-
-```text
-Whistledown/
-├── Whistledown.html
-├── Whistledown.css
-└── README.md
-````
-
-## How to Run the Project
+No Node.js installation, backend server, or database setup is required.
 
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/your-repository-name.git
+git clone https://github.com/Lerrica-Torreno/Whistledown-Personal-Library.git
 ```
 
-### 2. Open the Project Folder
+### 2. Navigate to the Project
 
 ```bash
-cd your-repository-name
+cd Whistledown-Personal-Library
 ```
 
-### 3. Open the Website
+### 3. Run the Website
 
-Open the following file in a web browser:
+Open `index.html` in your browser.
 
-```text
-Whistledown.html
-```
+For a more convenient development experience, use the **Live Server** extension in Visual Studio Code:
 
-You may also run the website using the Live Server extension in Visual Studio Code:
-
-1. Open the project folder in Visual Studio Code.
-2. Right-click `Whistledown.html`.
+1. Open the project folder in VS Code.
+2. Right-click `index.html`.
 3. Select **Open with Live Server**.
+4. The website will open in your browser.
 
-## File Description
+## Data Storage and Limitations
 
-### `Whistledown.html`
+Whistledown is currently a **frontend-only application**.
 
-Contains the structure and content of the personal library website, including the books, authors, reviews, headings, images, and other page elements.
+Its book collection and publication metadata are defined in `Whistledown-data.js`. Changes made through the interface are stored using the browser's `localStorage` API.
 
-### `Whistledown.css`
+This means:
 
-Contains the styling of the website, including the layout, colors, typography, spacing, images, and responsive design.
+- No account registration or login is required.
+- Changes remain local to each visitor's browser.
+- Data is not synchronized across devices.
+- Clearing browser storage can remove locally saved changes.
+- The application does not use a shared backend or database.
 
-## Purpose of the Project
+Some catalog fields contain **demonstration data** for interface testing. These values should not be treated as verified publication records or authentic personal reading history.
 
-The purpose of this project is to demonstrate how Human-Computer Interaction principles can be applied to a simple personal library website.
+## Deployment
 
-It focuses on presenting information in a way that is understandable, accessible, visually organized, and easy to use.
+The project is designed for static hosting and is being prepared for deployment through **Vercel**.
+
+Because the application uses HTML, CSS, and JavaScript, it can also be hosted through GitHub Pages or other static hosting providers.
+
+A public demo link will be added after deployment.
 
 ## Future Improvements
 
-Possible improvements include:
+Possible enhancements include:
 
-* Adding JavaScript interactions
-* Adding a book search feature
-* Filtering books by author or genre
-* Adding reading-status categories
-* Improving mobile responsiveness
-* Adding a dark mode
-* Adding more books and reviews
-* Connecting the website to a database
-* Allowing users to add or edit books
+- Integration with a book-information API for verified metadata.
+- User authentication and personalized accounts.
+- Cloud-based storage for book collections.
+- Reading-progress tracking.
+- Custom shelves and reading lists.
+- Improved catalog management and data validation.
 
-## Author
+These features are potential future developments, not part of the current frontend release.
 
-Lerrica Jeremy S. Torreno
+## Project Background
 
-Human-Computer Interaction Project
+Whistledown began as a personal web development project inspired by an appreciation for literature and digital storytelling.
 
-## Academic Purpose
+The project was later redesigned to improve usability, visual consistency, maintainability, and responsiveness while preserving its original literary identity.
 
-This project was created for academic and educational purposes as part of a Human-Computer Interaction activity.
+It demonstrates how a static website can provide an engaging, interactive user experience through thoughtful UI/UX design and well-organized frontend development.
 
-## Disclaimer
+## Content and Asset Attribution
 
-The book covers, descriptions, and author information used in this project belong to their respective owners and are included for educational purposes only.
+Book titles, cover artwork, author portraits, and other third-party literary materials belong to their respective authors, publishers, photographers, or rights holders.
 
-```
+Their inclusion in the project does not imply ownership or endorsement. Permission or appropriate licensing must be secured before publicly distributing assets where required, including background music.
 
-**GitHub repository description:**
+## Developer
 
-> A Human-Computer Interaction project featuring a personal library website with books, authors, and personal reviews, built using HTML and CSS.
-```
+**Lerrica Jeremy S. Torreno**
+
+BS Computer Science — Data Science Specialization
+
+GitHub: [Lerrica-Torreno](https://github.com/Lerrica-Torreno)
+
+---
+
+*Whistledown Personal Library — Where stories find a home.*
