@@ -182,6 +182,12 @@ Book titles, cover artwork, author portraits, and other third-party literary mat
 
 Their inclusion in the project does not imply ownership or endorsement. Permission or appropriate licensing must be secured before publicly distributing assets where required, including background music.
 
+## Live Website
+
+Whistledown Personal Library is deployed on Vercel.
+
+**Live Demo:** https://whistledown-personal-library.vercel.app
+
 ## Developer
 
 **Lerrica Jeremy S. Torreno**
